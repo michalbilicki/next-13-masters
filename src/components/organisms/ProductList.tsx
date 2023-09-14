@@ -6,10 +6,10 @@ type ProductListProps = {
 
 export function ProductList({ products }: ProductListProps) {
 	return (
-		<div className="flex flex-row gap-4" data-testid="products-list">
+		<ul className="flex flex-row gap-4" data-testid="products-list">
 			{products.map((product) => (
 				<ProductListItem key={product.id} {...product} />
 			))}
-		</div>
+		</ul>
 	);
 }

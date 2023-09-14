@@ -14,9 +14,9 @@ export type ProductListItemProps = {
 
 export function ProductListItem({ name, price, category, image }: ProductListItemProps) {
 	return (
-		<div className="flex cursor-pointer flex-col p-4 shadow-lg [&>img]:hover:scale-105">
+		<li className="flex cursor-pointer flex-col p-4 shadow-lg [&>img]:hover:scale-105">
 			<CoverImage src={image.src} alt={image.alt} height={300} width={300} className="p-4" />
 			<ProductDetails name={name} price={price} category={category} />
-		</div>
+		</li>
 	);
 }
