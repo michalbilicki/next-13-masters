@@ -8,7 +8,7 @@ export function ProductDetails({ name, price, category }: ProductDetailsProps) {
 	return (
 		<div className="px-4">
 			<div className="flex flex-row justify-between">
-				<span className="text-black">{name}</span>
+				<h3 className="text-black">{name}</h3>
 				<span className="text-black">
 					{Intl.NumberFormat("en-us", { style: "currency", currency: "USD" }).format(price / 100)}
 				</span>
